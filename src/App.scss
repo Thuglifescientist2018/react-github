@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&family=Lobster&display=swap");
+.App {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background: url("https://source.unsplash.com/1600x900/?dark, universe") center
+    center/cover;
+  box-shadow: 0px 10px 6px black;
+  padding: 10px;
+  color: white;
+
+  .container {
+    background-color: rgba(0, 0, 0, 0.5);
+    .user_input {
+      input {
+        padding: 10px;
+        margin: 10px;
+        width: 50%;
+        outline: none;
+        font-family: "IBM Plex Mono", monospace;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-top: 2px solid white;
+        color: white;
+      }
+    }
+    .repos {
+      display: flex;
+      flex-wrap: wrap;
+      .repo {
+        font-family: "IBM Plex Mono", monospace;
+        background: black;
+        color: white;
+        margin: 10px;
+        padding: 10px;
+        a {
+          color: white;
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            color: orange;
+          }
+        }
+      }
+    }
+  }
+}

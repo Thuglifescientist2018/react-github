@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&family=Lobster&display=swap");
+.App {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background: url("https://source.unsplash.com/1600x900/?dark, universe") center center/cover;
+  -webkit-box-shadow: 0px 10px 6px black;
+          box-shadow: 0px 10px 6px black;
+  padding: 10px;
+  color: white;
+}
+
+.App .container {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.App .container .user_input input {
+  padding: 10px;
+  margin: 10px;
+  width: 50%;
+  outline: none;
+  font-family: "IBM Plex Mono", monospace;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-top: 2px solid white;
+  color: white;
+}
+
+.App .container .repos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.App .container .repos .repo {
+  font-family: "IBM Plex Mono", monospace;
+  background: black;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+
+.App .container .repos .repo a {
+  color: white;
+}
+
+.App .container .repos .repo a h1,
+.App .container .repos .repo a h2,
+.App .container .repos .repo a h3,
+.App .container .repos .repo a h4,
+.App .container .repos .repo a h5,
+.App .container .repos .repo a h6 {
+  color: orange;
+}
+/*# sourceMappingURL=App.css.map */
