@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class Repos extends React.Component {
   constructor(props) {
@@ -15,6 +15,7 @@ class Repos extends React.Component {
             this.props.items.map((item, count) => (
               <div className="repo">
                 {count + 1}
+                {/* Trying to send state to RepoDetail.jsx through Link (Doesn't work) */}
                 <Link
                   to={{
                     pathname: `/repo-detail`,
