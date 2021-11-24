@@ -1,9 +1,8 @@
 import "./App.css";
 import React from "react";
-import { Route, Routes, Link, BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import Repos from "./components/repos";
 import RepoDetail from "./components/RepoDetail";
-import RepoDetail2 from "./components/RepoDetail2";
 
 class App extends React.Component {
   constructor(props) {
@@ -14,7 +13,7 @@ class App extends React.Component {
     };
   }
   componentDidMount() {
-    this.firstFetch();
+    this.firstFetch(); // first fetch using the default query to get the first 25 repos
   }
   firstFetch() {
     fetch(
@@ -27,6 +26,7 @@ class App extends React.Component {
       });
   }
   searchRepo = (e) => {
+    // executes everytime the user types in the input field
     e.preventDefault();
     fetch(
       `https://api.github.com/search/repositories?q=${this.state.query} &per_page=25`
@@ -68,7 +68,7 @@ class App extends React.Component {
                 />
                 <Route path="/repo-detail" element={<RepoDetail />} />
               </Routes>
-              <button onClick={this.nextPage}>Next Page</button>
+              <button>Next Page</button>
             </div>
           </div>
         </div>
